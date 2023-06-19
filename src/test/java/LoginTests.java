@@ -17,8 +17,8 @@ public class LoginTests {
         Configuration.holdBrowserOpen = true;
         open("https://qa.guru/cms/system/login");
         $(".login-form").shouldHave(text("Войти"));
-        $("[name=email]").setValue("satanis70@gmail.com");
-        $("[name=password]").setValue("3&$D-@fM").pressEnter();
+        $("[name=email]").setValue("**********");
+        $("[name=password]").setValue("******").pressEnter();
         $(".main-header__login").click();
         $(".logined-form").shouldBe(text("Здравствуйте, Никита"));
     }
